@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar HTML</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <!--Bagian header website-->
+        <header>
+            <h1>Awaluna Khilma Silvia</h1>
+            <p>Tentang Saya</p>
+        </header>
+<!-- Menu Hamburger -->
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<!-- Menu Navigasi -->
+<nav class="menu">
+    <a href="#profil">Profil</a>
+    <a href="#hobi">Hobi</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+        <main>
+            <!-- Bagian profil -->
+            <section id="profil">
+                    <h2>Profil Saya</h2>
+                        <img src="image/foto.jpg" alt="Foto profil Awaluna">
+                <p>
+                    Saya mahasiswa
+                    <span>Teknologi Informasi</span>.
+                </p>
+
+                <p>
+                    Kunjungi
+                    <a href="https://www.google.com"
+                        target="_blank"
+                        title="Buka halaman Google di tab baru">
+                        Google
+                    </a>
+                    untuk mencari informasi.
+                </p>
+            </section>
+            <!--bagian hobi-->
+            <section id="hobi">
+                <h2>Hobi Saya</h2>
+
+                <p>
+                    Saya suka belajar teknologi dan mendengarkan musik
+                    saat sedang mengerjakan tugas ataupun bersantai.
+                </p>
+
+                <ul>
+                    <li>Belajar teknologi</li>
+                    <li>Mendengarkan musik</li>
+                </ul>
+
+                <h3>Target Belajar Saya</h3>
+
+                <ol>
+                    <li>Belajar HTML</li>
+                    <li>Belajar CSS</li>
+                </ol>
+            </section>
+            <!--bagian pendidikan-->
+            <section id="pendidikan">
+                <h2>Pendidikan Saya</h2>
+            <div>
+                <p>
+                    Pendidikan terakhir saya adalah SMK dengan jurusan
+                    Teknik Instalasi Tenaga Listrik (TITL) di SMK Yudya
+                    Karya Magelang dan lulus pada tahun 2024.
+                    Saat ini saya sedang menempuh pendidikan D3 Teknologi
+                    Informasi di Universitas Muhammadiyah Magelang dan
+                    sedang magang di EduSoftCenter, Gentan, Kabupaten Sukoharjo.
+                </p>
+            </div>
+            </section>
+
+            <article>
+                <h2>
+                    Web Developer
+                </h2>
+                <p>
+                    Web Developer adalah balblabla
+                </p>
+            </article>
+
+                <section>
+                    <h2>Data mahasiswa</h2>
+                
+                    <table>
+                    <caption>Biodata mahasiswa</caption>
+                    
+                    <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Prodi</th>
+                        <th>Semester</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>Luna</td>
+                        <td>Teknologi Informasi</td>
+                        <td>Lima (5)</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </section>
+            <!--bagian kontak-->
+            <section id="kontak">
+                <h2>Hubungi Saya</h2>
+
+                <form action="https://formspree.io/f/xjywjneg" method="POST">
+                    <fieldset>
+                        <legend>Form Hubungi Saya</legend>
+
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama"
+                                placeholder="Masukkan nama kamu"
+                                minlength="3"
+                                maxlength="30"
+                                required>
+
+                    <br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"
+                                placeholder="Masukkan email kamu"
+                                required>
+
+                    <br><br>
+
+                        <label for="pesan">Pesan:</label>
+                        <br>
+
+                        <textarea id="pesan" name="pesan"
+                                placeholder="Tulis pesan kamu di sini"
+                                required></textarea>
+
+                    <br><br>
+
+                        <button type="submit">Kirim</button>
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Awaluna Khilma Silvia
+                2024
+            </p>
+        </footer>
+    </body>
+</html>
